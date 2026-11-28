@@ -11,6 +11,8 @@ jobs:
         with: { distribution: temurin, java-version: 17 }
       - run: npm install
       - run: npx cap add android
+      - name: App icon
+        run: pip install pillow && python3 icon/make.py android/app/src/main/res
       - name: Allow http to the server
         run: sed -i 's/<application/<application android:usesCleartextTraffic="true"/' android/app/src/main/AndroidManifest.xml
       - run: npx cap sync android
