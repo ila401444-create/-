@@ -1,2 +1,1 @@
-{"appId":"com.coder.sim","appName":"Симулятор кодера","webDir":"www",
- "server":{"androidScheme":"http","cleartext":true}}
+{"appId": "com.codersim.game", "appName": "CoderSim", "webDir": "www", "server": {"androidScheme": "http", "cleartext": true}}
